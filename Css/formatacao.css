@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Inter:wght@300;400;700&display=swap');
+
+:root{
+  --cor-princial: #571100 ;
+  --cor-secundaria: #89603D ;
+  --cor-bg: #d3d3d3 ;
+  --cor-containers: #ffffff ;
+  --cor-destaque: #dd9738 ;
+}
+
+body {
+  background-color: var(--cor-bg);
+  overflow-y: auto;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Inter', sans-serif !important;
+}
+nav {
+  height: 60px !important;
+  background-color: var(--cor-containers);
+}
+
+main {
+  height: calc(100vh -100px)!important;
+}
+
+footer {
+  height: 25px !important;
+  background-color: var(--cor-containers);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--cor-princial);
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.conteiner__principal {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20vh;
+}
+
+.conteiner__logo {
+  width: 500px;
+}
+
+.conteiner__texto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.conteiner__texto h1 , p {
+  color: var(--cor-secundaria);
+}
+
+.conteiner__texto h1 {
+  font-size: 2.5em !important;
+  font-weight: bold !important;
+}
+
+.conteiner__texto p {
+  font-size: 1.5em !important;
+  text-align: left;
+}
+
+@media (max-width: 912px) {
+  .conteiner__principal {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+  }
+
+  .conteiner__texto {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .conteiner__texto p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .conteiner__texto h1{
+    font-size: 1.5em !important;
+    margin-bottom: 20px;
+  }
+
+  .conteiner__texto p {
+    font-size: 1.3em !important;
+  }
+}
+
+/* Complemento bootstrap */
+.font-ze {
+  font-family: 'Bahiana', cursive !important;
+  font-size: 3em !important;
+  color: var(--cor-princial) !important;
+}
+
+.btn-ze {
+  background-color: var(--cor-princial);
+  border: 0px solid var(--cor-princial);
+  color: #ffffff;
+}
+
+.btn-ze:hover {
+  background-color: var(--cor-destaque);
+  color: black;
+}
+
+.cor-principal {
+  color: var(--cor-princial);
+}
+
+#ativo {
+  color:var(--cor-destaque) !important;
+}
+/* ----------------------*/
+
+
+
+
+
+
+
